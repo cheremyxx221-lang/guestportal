@@ -22,14 +22,14 @@ document.querySelectorAll('[data-fallback]').forEach(a=>{
 const CONTACT = {
   lastName: "",                    // Фамилия (можно пусто)
   firstName: "Как дома",           // Имя/название
-  org: "Как дома — апартаменты",
+  org: "Как дома — квартиры",
   title: "Администратор",
-  phone: "+7 999 123-45-67",
-  whatsapp: "https://wa.me/79991234567",
+  phone: "+7 923 659-73-92",
+  whatsapp: "https://wa.me/79236597392",
   telegram: "https://t.me/username",
   email: "hello@kakdoma.example",  // можно удалить строку EMAIL
   site: "https://cheremyxx221-lang.github.io/guestportal/",
-  note: "Гостевой портал: все инструкции и контакты по QR."
+  note: "Кваритиры посуточно."
 };
 
 function buildVCard(c) {
