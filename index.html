@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Как дома — портал гостя</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+          <img src="assets/img/logo_kak_doma.png" alt="Как дома" height="88">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbars">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#checkout">Выезд</a></li>
+            <li class="nav-item"><a class="nav-link" href="#deposit">Залог</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nearby">Рядом</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="py-5 text-white hero" id="top">
+      <div class="container text-center">
+        <h1 class="display-6 fw-bold mb-3">Вся полезная информация в одном месте</h1>
+        <div class="card wifi-card mx-auto bg-transparent border border-light-subtle shadow-sm">
+          <div class="card-body text-start">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-wifi"></i>
+              <span class="fw-semibold">Сеть:</span>
+              <span id="wifi-ssid">Guest_Apt</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="fw-semibold">Пароль:</span>
+              <span id="wifi-pass">StayHappy2025</span>
+              <button class="btn btn-outline-light btn-sm py-0 px-2 copy" data-copy="wifi-pass" title="Скопировать">
+                <i class="bi bi-clipboard"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="pb-5">
+      <!-- FAQ -->
+      <section id="faq" class="py-5">
+        <div class="container">
+          <h2 class="h4 fw-bold mb-4"><i class="bi bi-question-circle me-2"></i>Часто задаваемые вопросы</h2>
+
+          <div class="accordion" id="faqAcc">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="h1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="true" aria-controls="c1">
+                  <i class="bi bi-wifi me-2"></i> Как подключиться к Wi‑Fi?
+                </button>
+              </h2>
+              <div id="c1" class="accordion-collapse collapse show" aria-labelledby="h1" data-bs-parent="#faqAcc">
+                <div class="accordion-body">
+                  Имя сети и пароль указаны сверху в блоке. Нажмите значок <i class="bi bi-clipboard"></i>, чтобы скопировать пароль.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="h2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2" aria-expanded="false" aria-controls="c2">
+                  <i class="bi bi-door-closed me-2"></i> Как пользоваться замком?
+                </button>
+              </h2>
+              <div id="c2" class="accordion-collapse collapse" aria-labelledby="h2" data-bs-parent="#faqAcc">
+                <div class="accordion-body">
+                  Внутри квартиры находится ключ‑карта и ключ от домофона для самостоятельного входа и выхода.
+                  <ul class="mt-2 mb-0">
+                    <li>При выходе доведите дверь до щелчка — она автоматически заблокируется.</li>
+                    <li>Чтобы открыть дверь, приложите карточку к циферблату — дверь откроется.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="h3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3" aria-expanded="false" aria-controls="c3">
+                  <i class="bi bi-life-preserver me-2"></i> Что делать, если возникла проблема?
+                </button>
+              </h2>
+              <div id="c3" class="accordion-collapse collapse" aria-labelledby="h3" data-bs-parent="#faqAcc">
+                <div class="accordion-body">
+                  Напишите нам в WhatsApp или Telegram — поможем оперативно.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Checkout -->
+      <section id="checkout" class="py-5 bg-white border-top border-bottom">
+        <div class="container">
+          <h2 class="h4 fw-bold mb-3"><i class="bi bi-box-arrow-right me-2"></i>Как происходит выезд?</h2>
+      <!-- ВАЖНАЯ ИНФОРМАЦИЯ -->
+    <div class="alert alert-warning mb-4" role="alert">
+      <i class="bi bi-exclamation-triangle me-2"></i>
+      <b>Важная информация:</b> заезд осуществляется с <b>14:00</b>, выезд до <b>12:00</b>.
+    </div>
+          
+          <ol class="list-group list-group-numbered shadow-sm">
+            <li class="list-group-item">Проверьте окна и бытовые приборы.</li>
+            <li class="list-group-item">Не забывайте личные вещи</li>
+            <li class="list-group-item">Сообщите нам о выезде.</li>
+            <li class="list-group-item">Доведите дверь до щелчка — она автоматически закроется.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Deposit -->
+      <section id="deposit" class="py-5">
+        <div class="container">
+          <h2 class="h4 fw-bold mb-3"><i class="bi bi-cash-coin me-2"></i>Залог</h2>
+          <div class="p-4 bg-white border rounded-3 shadow-sm">
+            Возврат залога — в течение дня, обычно <b>1–2 часа</b> после выезда.
+          </div>
+        </div>
+      </section>
+
+      <!-- Nearby -->
+      <section id="nearby" class="py-5 bg-white border-top border-bottom">
+        <div class="container">
+          <h2 class="h4 fw-bold mb-4"><i class="bi bi-geo-alt me-2"></i>Что рядом</h2>
+          <div class="row g-3">
+            <div class="col-6 col-lg-3">
+              <a class="card card-action text-decoration-none" target="_blank"
+                 href="dgis://2gis.ru/search/аптека%20рядом%20Барнаул%2C%20Взлётная%2036"
+                 data-fallback="https://2gis.ru/search/аптека рядом Барнаул, Взлётная 36">
+                <div class="card-body d-flex align-items-center gap-2">
+                  <i class="bi bi-capsule"></i><span class="fw-semibold">Аптеки</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="card card-action text-decoration-none" target="_blank"
+                 href="dgis://2gis.ru/search/кафе%20рядом%20Барнаул%2C%20Взлётная%2036"
+                 data-fallback="https://2gis.ru/search/кафе рядом Барнаул, Взлётная 36">
+                <div class="card-body d-flex align-items-center gap-2">
+                  <i class="bi bi-cup-hot"></i><span class="fw-semibold">Кафе</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="card card-action text-decoration-none" target="_blank"
+                 href="dgis://2gis.ru/search/супермаркет%20рядом%20Барнаул%2C%20Взлётная%2036"
+                 data-fallback="https://2gis.ru/search/супермаркет рядом Барнаул, Взлётная 36">
+                <div class="card-body d-flex align-items-center gap-2">
+                  <i class="bi bi-basket"></i><span class="fw-semibold">Супермаркеты</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="card card-action text-decoration-none" target="_blank"
+                 href="dgis://2gis.ru/search/парк%20рядом%20Барнаул%2C%20Взлётная%2036"
+                 data-fallback="https://2gis.ru/search/парк рядом Барнаул, Взлётная 36">
+                <div class="card-body d-flex align-items-center gap-2">
+                  <i class="bi bi-tree"></i><span class="fw-semibold">Парки</span>
+                </div>
+              </a>
+            </div>
+          </div>
+         
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <section id="contacts" class="py-5">
+        <div class="container">
+          <h2 class="h4 fw-bold mb-3">Контакты</h2>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-dark" href="tel:+79236597392"><i class="bi bi-telephone me-2"></i>Позвонить</a>
+            <a class="btn btn-success" target="_blank" href="https://wa.me/79236597392"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+            <a class="btn btn-primary" target="_blank" href="https://t.me/username"><i class="bi bi-telegram me-2"></i>Telegram</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 bg-dark text-white-50">
+      <div class="container small">© Как дома</div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

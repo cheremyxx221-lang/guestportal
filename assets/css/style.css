@@ -1,0 +1,30 @@
+
+@media (min-width: 992px) {.navbar .nav-link{padding-right: .9rem; padding-left: .9rem;}}
+.hero{
+  background: url('../img/hero_bg.jpg') center/cover no-repeat;
+  position: relative;
+}
+.hero:before{
+  content:''; position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.35));
+}
+.hero .container{position:relative; z-index:1;}
+.wifi-card{max-width:520px; backdrop-filter: blur(4px); border-radius: 14px;}
+.card-action{transition: transform .15s ease, box-shadow .15s ease;}
+.card-action:hover{transform: translateY(-2px); box-shadow: 0 .75rem 1.5rem rgba(255, 255, 255, 0.08);}
+/* Цвет подписи "Сеть:" и "Пароль:" */
+.wifi-card .fw-semibold {
+  color: #ffffff; /* золотой */
+}
+
+/* Цвет самого текста Wi-Fi SSID */
+#wifi-ssid {
+  color: #ffffff; /* бирюзовый */
+  font-weight: bold;
+}
+
+/* Цвет текста пароля */
+#wifi-pass {
+  color: #ffffff; /* оранжево-красный */
+  font-weight: bold;
+}
