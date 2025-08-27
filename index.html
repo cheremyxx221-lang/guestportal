@@ -43,11 +43,11 @@
             <div class="d-flex align-items-center gap-2 mb-2">
               <i class="bi bi-wifi"></i>
               <span class="fw-semibold">Сеть:</span>
-              <span id="wifi-ssid">Guest_Apt</span>
+              <span id="wifi-ssid">KAKDOMA</span>
             </div>
             <div class="d-flex align-items-center gap-2">
               <span class="fw-semibold">Пароль:</span>
-              <span id="wifi-pass">StayHappy2025</span>
+              <span id="wifi-pass">KAKDOMA</span>
               <button class="btn btn-outline-light btn-sm py-0 px-2 copy" data-copy="wifi-pass" title="Скопировать">
                 <i class="bi bi-clipboard"></i>
               </button>
@@ -55,6 +55,14 @@
           </div>
         </div>
       </div>
+      <!-- Уведомление про недействительные данные Wi-Fi -->
+<div class="mt-3 text-center">
+  <div class="alert alert-warning d-inline-flex align-items-center gap-2 py-2 px-3 mb-0 small" role="alert">
+    <i class="bi bi-info-circle"></i>
+    <span>Данные Wi-Fi временно недействительны. За актуальной информацией обращайтесь к администратору.</span>
+  </div>
+</div>
+
     </header>
     <div class="text-center my-4">
   <a id="add-contact" class="btn btn-dark btn-lg px-5 py-3">
@@ -114,6 +122,35 @@
           </div>
         </div>
       </section>
+<!-- Rules -->
+<section id="rules" class="py-5 bg-white border-top border-bottom">
+  <div class="container">
+    <div class="row justify-content-center">
+       <div class="col-12 col-lg-12">
+
+        <h2 class="h4 fw-bold mb-3">
+          <i class="bi bi-house-door me-2"></i>Правила проживания
+        </h2>
+
+        <!-- Плашка-напоминание -->
+        <div class="alert alert-warning mb-4" role="alert">
+          <i class="bi bi-info-circle me-2"></i>
+          Пожалуйста, соблюдайте правила проживания. В случае нарушений залоговая сумма может быть удержана.
+        </div>
+
+        <!-- Список правил -->
+        <ol class="list-group list-group-numbered shadow-sm">
+          <li class="list-group-item">Курение в квартире строго запрещено.</li>
+          <li class="list-group-item">Проживание и посещение посторонних гостей возможно только по предварительному согласованию.</li>
+          <li class="list-group-item">Соблюдайте тишину в вечернее и ночное время (с 22:00 до 08:00).</li>
+          <li class="list-group-item">Проведение вечеринок и шумных мероприятий запрещено.</li>
+          <li class="list-group-item">Бережно относитесь к имуществу квартиры и мебели.</li>
+        </ol>
+
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- Checkout -->
       <section id="checkout" class="py-5 bg-white border-top border-bottom">
@@ -134,61 +171,90 @@
         </div>
       </section>
 
-      <!-- Deposit -->
-      <section id="deposit" class="py-5">
-        <div class="container">
-          <h2 class="h4 fw-bold mb-3"><i class="bi bi-cash-coin me-2"></i>Залог</h2>
-          <div class="p-4 bg-white border rounded-3 shadow-sm">
-            Возврат залога — в течение дня, обычно <b>1–2 часа</b> после выезда.
-          </div>
-        </div>
-      </section>
+<!-- Deposit -->
+<section id="deposit" class="py-5 bg-white border-top border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-12">
 
-      <!-- Nearby -->
-      <section id="nearby" class="py-5 bg-white border-top border-bottom">
-        <div class="container">
-          <h2 class="h4 fw-bold mb-4"><i class="bi bi-geo-alt me-2"></i>Что рядом</h2>
-          <div class="row g-3">
-            <div class="col-6 col-lg-3">
-              <a class="card card-action text-decoration-none" target="_blank"
-                 href="dgis://2gis.ru/search/аптека%20рядом%20Барнаул%2C%20Взлётная%2036"
-                 data-fallback="https://2gis.ru/search/аптека рядом Барнаул, Взлётная 36">
-                <div class="card-body d-flex align-items-center gap-2">
-                  <i class="bi bi-capsule"></i><span class="fw-semibold">Аптеки</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-lg-3">
-              <a class="card card-action text-decoration-none" target="_blank"
-                 href="dgis://2gis.ru/search/кафе%20рядом%20Барнаул%2C%20Взлётная%2036"
-                 data-fallback="https://2gis.ru/search/кафе рядом Барнаул, Взлётная 36">
-                <div class="card-body d-flex align-items-center gap-2">
-                  <i class="bi bi-cup-hot"></i><span class="fw-semibold">Кафе</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-lg-3">
-              <a class="card card-action text-decoration-none" target="_blank"
-                 href="dgis://2gis.ru/search/супермаркет%20рядом%20Барнаул%2C%20Взлётная%2036"
-                 data-fallback="https://2gis.ru/search/супермаркет рядом Барнаул, Взлётная 36">
-                <div class="card-body d-flex align-items-center gap-2">
-                  <i class="bi bi-basket"></i><span class="fw-semibold">Супермаркеты</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-6 col-lg-3">
-              <a class="card card-action text-decoration-none" target="_blank"
-                 href="dgis://2gis.ru/search/парк%20рядом%20Барнаул%2C%20Взлётная%2036"
-                 data-fallback="https://2gis.ru/search/парк рядом Барнаул, Взлётная 36">
-                <div class="card-body d-flex align-items-center gap-2">
-                  <i class="bi bi-tree"></i><span class="fw-semibold">Парки</span>
-                </div>
-              </a>
-            </div>
-          </div>
-         
+        <h2 class="h4 fw-bold mb-3">
+          <i class="bi bi-cash-coin me-2"></i>Залог
+        </h2>
+
+        <!-- Плашка как у "Важная информация" -->
+        <div class="alert alert-warning mb-4" role="alert">
+          <i class="bi bi-exclamation-triangle me-2"></i>
+          Возврат залога — в течение дня, обычно <b>1–2 часа</b> после выезда.
         </div>
-      </section>
+
+        <!-- Плашка-заголовок -->
+        <div class="fw-semibold mb-3">
+          <i class="bi bi-exclamation-triangle me-2"></i>
+          Частые причины удержания залога
+        </div>
+
+        <!-- Список -->
+        <ol class="list-group list-group-numbered shadow-sm">
+          <li class="list-group-item">
+            Испачканное постельное бельё, которое невозможно отстирать обычной стиркой
+          </li>
+          <li class="list-group-item">Наличие не оговорённых гостей</li>
+          <li class="list-group-item">Сильный шум или поломки имущества</li>
+          <li class="list-group-item">Курение в квартире</li>
+        </ol>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Nearby -->
+<section id="nearby" class="py-5 bg-white border-top border-bottom">
+  <div class="container">
+    <h2 class="h4 fw-bold mb-4"><i class="bi bi-geo-alt me-2"></i>Что рядом</h2>
+    <div class="row g-3">
+      <div class="col-6 col-lg-3">
+        <a class="card card-action text-decoration-none" target="_blank"
+           href="dgis://2gis.ru/search/аптека%20рядом%20Барнаул%2C%20Павловский%20тракт%20303"
+           data-fallback="https://2gis.ru/search/аптека рядом Барнаул, Павловский тракт 303">
+          <div class="card-body d-flex align-items-center gap-2">
+            <i class="bi bi-capsule"></i><span class="fw-semibold">Аптеки</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <a class="card card-action text-decoration-none" target="_blank"
+           href="dgis://2gis.ru/search/кафе%20рядом%20Барнаул%2C%20Павловский%20тракт%20303"
+           data-fallback="https://2gis.ru/search/кафе рядом Барнаул, Павловский тракт 303">
+          <div class="card-body d-flex align-items-center gap-2">
+            <i class="bi bi-cup-hot"></i><span class="fw-semibold">Кафе</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <a class="card card-action text-decoration-none" target="_blank"
+           href="dgis://2gis.ru/search/супермаркет%20рядом%20Барнаул%2C%20Павловский%20тракт%20303"
+           data-fallback="https://2gis.ru/search/супермаркет рядом Барнаул, Павловский тракт 303">
+          <div class="card-body d-flex align-items-center gap-2">
+            <i class="bi bi-basket"></i><span class="fw-semibold">Супермаркеты</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <a class="card card-action text-decoration-none" target="_blank"
+           href="dgis://2gis.ru/search/парк%20рядом%20Барнаул%2C%20Павловский%20тракт%20303"
+           data-fallback="https://2gis.ru/search/парк рядом Барнаул, Павловский тракт 303">
+          <div class="card-body d-flex align-items-center gap-2">
+            <i class="bi bi-tree"></i><span class="fw-semibold">Парки</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <!-- Contacts -->
       <section id="contacts" class="py-5">
